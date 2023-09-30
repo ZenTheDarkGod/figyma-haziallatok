@@ -1,0 +1,46 @@
+/*
+Minden ide jön, ami az oldalak egységes kinézetéhez kell. 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-background) !important;
+    color: var(--color-primary) !important;
+}
+
+.title {
+    color: var(--color-primary);
+    font-family: var(--ff-title);
+    font-weight: bold;
+}
+
+.logo-title {
+    font-size: var(--fs-36);
+    letter-spacing: -2px;
+}
+
+.c-navbar {
+    padding: var(--distance-12-5) var(--distance-25);
+    display: grid;
+    justify-items: center;
+    border-bottom: 1px solid hsl(0 0% 85% / 30%);
+}
+
+.c-navbar > * {
+    margin: 0 !important;
+}
+
+.c-navbar a {
+    color: unset;
+    text-decoration: none;
+}
+
+main {
+    margin-top: var(--distance-50);
+    display: grid;
+    gap: var(--distance-12-5);
+}

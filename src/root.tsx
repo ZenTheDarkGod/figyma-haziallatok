@@ -1,4 +1,4 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useStylesScoped$ } from "@builder.io/qwik";
 import {
   QwikCityProvider,
   RouterOutlet,
@@ -7,6 +7,15 @@ import {
 import { RouterHead } from "./components/router-head/router-head";
 
 import "./global.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import "./style/_vars.css";
+import "./style/shared.css";
+
+
+import NavBar from "~/components/navbar/navbar";
+
+// import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 export default component$(() => {
   /**
@@ -16,7 +25,11 @@ export default component$(() => {
    * Don't remove the `<head>` and `<body>` elements.
    */
 
+  // useStylesScoped$(vars);
+  // useStylesScoped$(styles);
+
   return (
+
     <QwikCityProvider>
       <head>
         <meta charSet="utf-8" />
@@ -24,6 +37,7 @@ export default component$(() => {
         <RouterHead />
       </head>
       <body lang="en">
+        <NavBar />
         <RouterOutlet />
         <ServiceWorkerRegister />
       </body>
