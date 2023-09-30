@@ -1,5 +1,11 @@
 
 
+@media (min-width: 768px) {
+    .header-text-container {
+        margin-right: var(--distance-6-25);
+    }
+}
+
 .header-text-container {
     display: grid;
     gap: var(--distance-6-25);
