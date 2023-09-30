@@ -2,7 +2,7 @@
 
 @media (min-width: 768px) {
     .header-text-container {
-        margin-right: var(--distance-6-25);
+        padding: var(--distance-6-25);
     }
 }
 
@@ -19,7 +19,7 @@
 
 .row {
     margin-inline: max(auto, var(--distance-12-5)) !important;
-    max-width: var(--distance-725) !important;
+    max-width: var(--distance-737-5) !important;
 }
 
 img {
