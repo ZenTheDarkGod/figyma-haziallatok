@@ -23,6 +23,11 @@ body {
     letter-spacing: -2px;
 }
 
+h1.title {
+    font-size: var(--fs-48);
+    font-weight: normal;
+}
+
 .c-navbar {
     padding: var(--distance-12-5) var(--distance-25);
     display: grid;
@@ -37,6 +42,10 @@ body {
 .c-navbar a {
     color: unset;
     text-decoration: none;
+}
+
+header {
+    margin-top: var(--distance-50);   
 }
 
 main {

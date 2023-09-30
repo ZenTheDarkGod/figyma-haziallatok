@@ -6,7 +6,7 @@ const NavBar = component$(() => {
 
     return (
         <nav class="c-navbar">
-            <Title level={1} logo={true}>
+            <Title level={2} isSpacingReduced={true}>
                 <a href="/">figyma.</a>
             </Title>
         </nav>

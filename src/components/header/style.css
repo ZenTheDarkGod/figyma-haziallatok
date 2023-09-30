@@ -1,0 +1,35 @@
+
+
+.header-text-container {
+    display: grid;
+    gap: var(--distance-6-25);
+    padding: 0;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center !important;
+}
+
+.row {
+    margin-inline: max(auto, var(--distance-12-5)) !important;
+    max-width: var(--distance-725) !important;
+}
+
+img {
+    max-width: var(--distance-300);
+}
+
+.quote {
+    margin: 0 !important;
+    /* max-width: var(--distance-325); */
+}
+
+.quote *:is(.text, .author) {
+    font-size: .75rem;
+    color: var(--color-secondary);
+}
+
+.quote .author {
+    text-align: right;
+}

@@ -166,6 +166,7 @@
     --distance-1000: calc(1000 * var(--distance-base));
     
     --color-primary: hsl(0, 0%, 100%);
+    --color-secondary: hsl(0, 0%, 58%);
     --color-accent: hsl(237, 50%, 56%);
     --color-background: hsl(0, 0%, 2%);
     --color-secondary-background: hsl(0, 0%, 9%);
@@ -178,7 +179,7 @@
     --fs-26: calc(26 * var(--fs-base));
     --fs-36: calc(26 * var(--fs-base));
     --fs-32: calc(26 * var(--fs-base));
-    --fs-48: calc(26 * var(--fs-base));
+    --fs-48: calc(48 * var(--fs-base));
     --fs-128: calc(128 * var(--fs-base));
     --fs-256: calc(256 * var(--fs-base));
     

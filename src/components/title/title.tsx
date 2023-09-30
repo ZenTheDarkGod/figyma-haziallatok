@@ -4,7 +4,7 @@ type level = 1 | 2 | 3 | 4 | 5 | 6 | 7;
 
 interface titleProps {
     level: level;
-    logo?: boolean;
+    isSpacingReduced?: boolean;
 }
 
 const levelLookupDict = {
@@ -18,7 +18,7 @@ const levelLookupDict = {
 }
 
 const Title = component$((props: titleProps) => {
-    if (!props.logo) {
+    if (!props.isSpacingReduced) {
         return (
             <>
                 {levelLookupDict[props.level]}
@@ -27,7 +27,7 @@ const Title = component$((props: titleProps) => {
     }
     return (
         <>
-            <h1 class="title logo-title"> <Slot /> </h1>
+            <h2 class="title logo-title"> <Slot /> </h2>
         </>
     );
 });

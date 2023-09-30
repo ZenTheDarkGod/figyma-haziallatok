@@ -2,15 +2,16 @@ import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import Title from "~/components/title/title";
-import NavBar from "~/components/navbar/navbar";
+import Header from "~/components/header/header";
 
 export default  component$(() => {
   return (
     <>
+      <Header/>
       <main>
-      <Title level={1} logo={true}>asd</Title>
-      <Title level={1} logo={true}>asd</Title>
-      <Title level={1} logo={true}>asd</Title>
+      <Title level={2} isSpacingReduced={true}>asd</Title>
+      <Title level={2} isSpacingReduced={true}>asd</Title>
+      <Title level={2} isSpacingReduced={true}>asd</Title>
       </main>
     </>
   );
