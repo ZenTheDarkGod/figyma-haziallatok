@@ -1,0 +1,5 @@
+
+.c-description > * {
+    font-size: .75rem !important;
+    color: var(--color-secondary) !important;
+}

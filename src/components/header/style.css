@@ -32,11 +32,6 @@ img {
     /* max-width: var(--distance-325); */
 }
 
-.quote *:is(.text, .author) {
-    font-size: .75rem;
-    color: var(--color-secondary);
-}
-
 .quote .author {
     text-align: right;
 }

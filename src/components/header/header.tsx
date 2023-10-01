@@ -1,6 +1,8 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
 
 import Title from "../title/title";
+import Description from "../description/description";
+
 
 import "./style.css";
 
@@ -14,14 +16,14 @@ const Header = component$(() => {
                     <Title level={1}>
                         háziállatok.
                     </Title>
-                    <div class="quote">
+                    <Description class="quote">
                         <p class="text">
                             “Az ember csak azt védi, amit szeret. És hogyan fejlődhetne ki bennünk jobban az állatok iránti szeretet, mint ha szárnyaink alá veszünk és gondozgatunk egy jószágot?”
                         </p>
                         <p class="author">
                             — Peter Wohlleben
                         </p>
-                    </div>
+                    </Description>
                 </div>
                 <img class="col-sm-12 col-md-6" src={fishBowl} alt="illusztráció" />
             </div>

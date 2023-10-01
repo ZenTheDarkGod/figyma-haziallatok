@@ -1,14 +1,16 @@
-import { component$, useStylesScoped$ } from "@builder.io/qwik";
+import { component$, Slot } from "@builder.io/qwik";
 
-import Title from "../title/title";
+import "./style.css";
 
-const Description = component$(() => {
+interface DescProps {
+    class?: string | null,
+}
+
+const Description = component$((props: DescProps) => {
     return (
-        <p class="c-navbar">
-            <Title level={1}>
-                háziállatok.
-            </Title>
-        </p>
+        <div class={`c-description ${props.class}`}>
+            <Slot />
+        </div>
     );
 });
 
