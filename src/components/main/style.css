@@ -1,0 +1,32 @@
+
+
+main {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: var(--distance-12-5);
+}
+
+.main-text-container {
+    margin-inline: auto !important;
+    max-width: var(--distance-737-5);
+    display: grid;
+    gap: var(--distance-6-25);
+}
+
+.main-text-container h2 {
+    font-size: var(--fs-32);
+    font-weight: 600;
+    margin: 0 !important;
+}
+
+main .container-fluid {
+    padding: 0 !important;
+}
+
+main .row {
+    justify-content: center;
+    width: 100%;
+    gap: var(--distance-12-5);
+    max-width: 100% !important;
+}

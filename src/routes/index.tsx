@@ -3,16 +3,14 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 
 import Title from "~/components/title/title";
 import Header from "~/components/header/header";
+import Main from "~/components/main/main";
+
 
 export default  component$(() => {
   return (
     <>
       <Header/>
-      <main>
-      <Title level={2} isSpacingReduced={true}>asd</Title>
-      <Title level={2} isSpacingReduced={true}>asd</Title>
-      <Title level={2} isSpacingReduced={true}>asd</Title>
-      </main>
+      <Main/>
     </>
   );
 });

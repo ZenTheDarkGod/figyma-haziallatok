@@ -1,4 +1,4 @@
-import { component$, IntrinsicElements, Slot } from "@builder.io/qwik";
+import { component$, Slot } from "@builder.io/qwik";
 
 type level = 1 | 2 | 3 | 4 | 5 | 6 | 7;
 

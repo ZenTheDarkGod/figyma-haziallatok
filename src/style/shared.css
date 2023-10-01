@@ -53,3 +53,14 @@ main {
     display: grid;
     gap: var(--distance-12-5);
 }
+
+header, main, footer {
+    margin-top: var(--distance-50);
+    padding-inline: var(--distance-12-5) !important;
+}
+
+@media (min-width: 768px) {
+    header, main, footer {
+        margin-top: var(--distance-100) !important;
+    }
+}
