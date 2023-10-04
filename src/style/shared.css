@@ -64,3 +64,49 @@ header, main, footer {
         margin-top: var(--distance-100) !important;
     }
 }
+
+
+.card-body {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: grid;
+    grid-template-columns: var(--distance-50) 1fr;
+    align-items: center;
+    gap: var(--distance-6-25);
+}
+
+.card-body > img {
+    width: var(--distance-50);
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.detail-wrapper {
+    display: grid;
+    height: fit-content;
+}
+
+.detail-wrapper * {
+    display: inline-block;
+    font-size: var(--fs-16) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    vertical-align: middle;
+}
+
+.detail-wrapper > p {
+    color: var(--color-secondary) !important;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: var(--ff-normal);
+    font-size: var(--fs-16) !important;
+}
+
+.detail-wrapper > *:is(a, p.highlight) {
+    color: var(--color-primary) !important;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--ff-title);
+    font-size: var(--fs-16) !important;
+}

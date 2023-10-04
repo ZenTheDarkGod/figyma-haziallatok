@@ -176,6 +176,7 @@
     --fs-11: calc(11 * var(--fs-base));
     --fs-12: calc(12 * var(--fs-base));
     --fs-16: calc(16 * var(--fs-base));
+    --fs-20: calc(20 * var(--fs-base));
     --fs-26: calc(26 * var(--fs-base));
     --fs-36: calc(26 * var(--fs-base));
     --fs-32: calc(26 * var(--fs-base));

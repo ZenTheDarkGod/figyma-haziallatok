@@ -6,7 +6,9 @@ import Card from "../card/card";
 
 import "./style.css";
 
-import cat from "~/assets/cat.jpg";
+import kormi from "~/assets/pets/cats/black_cat.jpg";
+import rubi from "~/assets/pets/dogs/dog_rubi.jpg"
+import cooper from "~/assets/pets/dogs/dog_cooper.jpg"
 
 const Main = component$(() => {
     return (
@@ -28,24 +30,24 @@ const Main = component$(() => {
                         owner="Zoli"
                         type="cat"
                         petName="Kormi"
-                        img={cat}
+                        img={kormi}
                         url="/zoli/"
                     />
                     <Card
                         class="col-sm-12 col-md-4"
-                        owner="Zoli"
-                        type="cat"
-                        petName="Kormi"
-                        img={cat}
-                        url="/zoli/"
+                        owner="András"
+                        type="dog"
+                        petName="Rubi"
+                        img={rubi}
+                        url="/andras/"
                     />
                     <Card
                         class="col-sm-12 col-md-4"
-                        owner="Zoli"
+                        owner="Tomi"
                         type="cat"
-                        petName="Kormi"
-                        img={cat}
-                        url="/zoli/"
+                        petName="Cooper"
+                        img={cooper}
+                        url="/tomi/"
                     />
                 </div>
             </div>

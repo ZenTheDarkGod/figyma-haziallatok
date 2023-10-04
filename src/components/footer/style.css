@@ -1,5 +1,5 @@
 footer {
-    padding: var(--distance-12-5) !important;
+    padding: var(--distance-25) !important;
     border-top: 1px solid hsl(0 0% 85% / 30%);
 }
 

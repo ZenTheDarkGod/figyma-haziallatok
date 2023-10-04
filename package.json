@@ -47,5 +47,8 @@
     "vite": "4.4.7",
     "vite-tsconfig-paths": "4.2.0"
   },
-  "version": "1.1.1"
+  "version": "1.2.0",
+  "dependencies": {
+    "marked": "^9.0.3"
+  }
 }
