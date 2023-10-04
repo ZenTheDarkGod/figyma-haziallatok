@@ -1,4 +1,4 @@
-import { JSXNode, component$ } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 
 import { parse } from "marked";
 
