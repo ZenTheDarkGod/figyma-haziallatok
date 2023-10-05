@@ -21,6 +21,7 @@ export default component$(() => {
         petName="Rubi"
         headIMG={img}
         content={content}
+        type="dog"
       />
       <Footer />
     </>
@@ -36,7 +37,7 @@ export const head: DocumentHead = {
     },
     {
       name: "author",
-      content: "Zoli • figyma."
+      content: `${NAME} • figyma.`
     },
     {
       name: "og:image",

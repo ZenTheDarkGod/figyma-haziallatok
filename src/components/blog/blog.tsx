@@ -5,12 +5,14 @@ import { parse } from "marked";
 import "./style.css";
 
 import cat_logo from "~/assets/undraw_Cat_epte.png";
+import dog_logo from "~/assets/undraw_Dog_c7i6.png";
 
 interface BlogProps {
     ownerName: string,
     petName: string,
     headIMG: string,
-    content: string
+    content: string,
+    type?: "dog" | "cat"
 }
 
 const Blog = component$((props: BlogProps) => {
@@ -24,7 +26,7 @@ const Blog = component$((props: BlogProps) => {
             </nav>
             <img src={props.headIMG} alt="Kép az állatról" />
             <div class="card-body">
-                <img src={cat_logo} alt="macska logó" />
+                <img src={props.type === "cat" ? cat_logo : dog_logo} alt="macska logó" />
                 <div class="detail-wrapper">
                     <p>{props.ownerName} háziállata</p>
                     <p class="highlight">{props.petName}</p>
