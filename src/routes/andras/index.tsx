@@ -12,7 +12,7 @@ const NAME = "András";
 
 export default component$(() => {
 
-  const content = `### asd \n shdgfs`;
+  const content = `### Írás alatt`;
 
   return (
     <>
