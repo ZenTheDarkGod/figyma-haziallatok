@@ -7,7 +7,7 @@ import Footer from "~/components/footer/footer";
 import img from "~/assets/pets/dogs/dog_cooper.jpg";
 
 
-const NAME = "Tomi";
+const NAME = "Tamás";
 
 
 export default component$(() => {

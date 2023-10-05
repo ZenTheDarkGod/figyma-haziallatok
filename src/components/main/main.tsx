@@ -43,11 +43,11 @@ const Main = component$(() => {
                     />
                     <Card
                         class="col-sm-12 col-md-4"
-                        owner="Tomi"
+                        owner="Tamás"
                         type="dog"
                         petName="Cooper"
                         img={cooper}
-                        url="/tomi/"
+                        url="/tamas/"
                     />
                 </div>
             </div>
