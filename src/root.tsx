@@ -1,4 +1,4 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useVisibleTask$ } from "@builder.io/qwik";
 import {
   QwikCityProvider,
   RouterOutlet,
@@ -14,6 +14,7 @@ import "./style/shared.css";
 
 
 import NavBar from "~/components/navbar/navbar";
+import { animCards } from "./anims";
 
 // import 'bootstrap/dist/js/bootstrap.bundle.min';
 
@@ -27,6 +28,30 @@ export default component$(() => {
 
   // useStylesScoped$(vars);
   // useStylesScoped$(styles);
+
+  useVisibleTask$(() => {
+    animCards();
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("onScreen");
+        } else {
+          // entry.target.classList.remove("hidden");
+        }
+      })
+    });
+
+    document.body.querySelectorAll<HTMLElement>("*").forEach((element) => {
+      element.classList.add("hidden");
+      console.log("element added");
+    });
+
+    setTimeout(() => {
+      const hidden = document.querySelectorAll(".hidden");
+      hidden.forEach((el) => observer.observe(el));
+    }, 200);
+  })
 
   return (
 

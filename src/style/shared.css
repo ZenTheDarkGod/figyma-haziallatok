@@ -110,3 +110,15 @@ header, main, footer {
     font-family: var(--ff-title);
     font-size: var(--fs-16) !important;
 }
+
+.hidden,
+body > * {
+    translate: 0 -50%;
+    opacity: 0%;
+    transition: .5s;
+}
+
+.onScreen {
+    translate: unset;
+    opacity: 1 !important;
+}

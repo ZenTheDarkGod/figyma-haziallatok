@@ -25,6 +25,8 @@ main .container-fluid {
 }
 
 main .row {
+    perspective: 3000px;
+
     justify-content: center;
     width: 100%;
     gap: var(--distance-12-5);

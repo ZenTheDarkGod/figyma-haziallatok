@@ -14,3 +14,30 @@
     object-position: center;
 }
 
+
+.card {
+    --gradient-x: 0;
+    --gradient-y: 0;
+    --gradient-opacity: .25;
+
+    overflow: hidden;
+    z-index: 1;
+
+    /* transition: transform .1s linear; */
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    left: calc(var(--gradient-x) * 1px);
+    top: calc(var(--gradient-y) * 1px);
+    height: 100%;
+    filter: blur(80px);
+    aspect-ratio: 1/1;
+    background-image: radial-gradient(circle, hsla(243, 100%, 69%, calc(0.761 * var(--gradient-opacity))) 0%, hsla(243, 100%, 69%, calc(0.502 * var(--gradient-opacity))) 50%, rgba(8,8,113,0) 72%, rgba(0,0,0,0) 100%);
+    /* transform: rotateY(6deg) rotateX(6deg); */
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    
+    transition: .25s;
+}
