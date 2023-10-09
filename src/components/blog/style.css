@@ -9,6 +9,11 @@
     height: fit-content !important;
 }
 
+.breadcrumb > *,
+.breadcrumb > *::before {
+    color: gray !important;
+}
+
 
 ol.breadcrumb  {
     margin: 0 !important;
