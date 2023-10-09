@@ -10,9 +10,7 @@ export function animCards() {
     document.querySelectorAll<HTMLElement>(".card").forEach(
         (element: HTMLElement) => {
             function onmove(event: MouseEvent) {
-                const rotationMultipier = 12.5;
-                const before = window.getComputedStyle(element, "::before");
-                console.log(before);
+                const rotationMultipier = 10;
 
                 const boundingRect = element.getBoundingClientRect();
                 const boundingRectMiddle = {
@@ -30,8 +28,6 @@ export function animCards() {
                     y: disctancesPX.y / (boundingRect.height / 2)
                 }
 
-                console.log(`rotateY(${6 * disctancesPERCENT.x}deg) rotateX(${6 * disctancesPERCENT.y}deg);`);
-
                 element.style.transform = `rotateY(${-1 * rotationMultipier * disctancesPERCENT.x}deg) rotateX(${rotationMultipier * disctancesPERCENT.y}deg)`;
 
                 const gradiantPos = {
@@ -44,9 +40,6 @@ export function animCards() {
             }
 
             element.addEventListener("mousemove", onmove);
-            element.addEventListener("mouseenter", () => {
-                element.style.setProperty("--gradient-opacity", `1`);
-            })
             element.addEventListener("mouseleave", () => {
                 element.style.transform = "";
 
@@ -58,7 +51,6 @@ export function animCards() {
 
                 element.style.setProperty("--gradient-x", `${gradiantPos.x}`);
                 element.style.setProperty("--gradient-y", `${gradiantPos.y}`);
-                element.style.setProperty("--gradient-opacity", `.25`);
             })
         });
 }

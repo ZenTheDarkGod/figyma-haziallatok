@@ -23,7 +23,11 @@
     overflow: hidden;
     z-index: 1;
 
-    /* transition: transform .1s linear; */
+    transition: transfrom linear .1s !important;
+}
+
+.card:hover {
+    --gradient-opacity: 1;
 }
 
 .card::before {
@@ -39,5 +43,5 @@
     z-index: -1;
     transform: translate(-50%, -50%);
     
-    transition: .25s;
+    transition: .25s !important;
 }
