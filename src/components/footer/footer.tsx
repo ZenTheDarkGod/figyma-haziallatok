@@ -19,30 +19,48 @@ const Footer = component$(() => {
                     </p>
                 </div>
                 <div>
-                        <Title level={4}>
+                    <Title level={3}>
+                        hozzájárulók
+                    </Title>
+                    <Title level={4}>
                         csapattagok
                     </Title>
                     <ul>
+                        <li>Arató András Dávid</li>
                         <li>Szudor Tamás Gábor</li>
                         <li>Takács Zoltán</li>
-                        <li>Arató András Dávid</li>
+                    </ul>
+                    <Title level={4}>
+                        segítség
+                    </Title>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/WarstekHUN">Balogh Levente</a>
+                        </li>
                     </ul>
                 </div>
                 <div>
+                    <Title level={3}>
+                        kapcsolat
+                    </Title>
                     <Title level={4}>
                         email
                     </Title>
-                    <p>
+                    <a href="mailto:neumann.nyx.team@gmail.com">
                         neumann.nyx.team@gmail.com
-                    </p>
-                </div>
-                <div>
+                    </a>
                     <Title level={4}>
                         telefon
                     </Title>
                     <p>
                         +36 20 441 7588
                     </p>
+                </div>
+                <div>
+                    <Title level={3}>
+                        licenc
+                    </Title>
+                    <a href="">Saját képeink licenc-je</a>
                 </div>
             </div>
         </footer>
