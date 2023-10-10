@@ -33,7 +33,8 @@ export default component$(() => {
   
   ---
 
-  ### Egyéb információk Rubi most 4éves, Oroszlányról hoztuk el, és születésnapomra kaptam.`;
+  ### Egyéb információk 
+  Rubi most 4éves, Oroszlányról hoztuk el, és születésnapomra kaptam.`;
 
   return (
     <>
