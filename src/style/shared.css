@@ -81,6 +81,11 @@ header, main, footer {
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 100%;
+    object-position: 55% 50%;
+}
+
+.card-body > img.dog {
+    object-position: 60% 50%;
 }
 
 .detail-wrapper {

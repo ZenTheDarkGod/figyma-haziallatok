@@ -19,7 +19,7 @@ const Card = component$((props: cardProps) => {
         <div class={`card ${props.class}`} style="width: 18rem;">
             <img src={props.img} class="card-img-top" />
                 <div class="card-body">
-                    <img src={ props.type === "cat" ? cat_logo : dog_logo } alt="macska logó" />
+                    <img src={ props.type === "cat" ? cat_logo : dog_logo } class={props.type} alt="macska logó" />
                     <div class="detail-wrapper">
                         <p>{props.owner} háziállata</p>
                         <a href={props.url} class="stretched-link">{props.petName}</a>
