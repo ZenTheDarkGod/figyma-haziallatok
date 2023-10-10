@@ -1,0 +1,31 @@
+.following-blob {
+    --blobsize: 70;
+
+    width: calc(var(--blobsize) * 1vw);
+    width: calc(var(--blobsize) * 1dvw);
+    aspect-ratio: 1/1;
+
+    background-color: var(--color-accent);
+    filter:
+        blur(var(--distance-300)) opacity(10%);
+    position: fixed;
+
+    z-index: -1;
+
+    translate: -50% -65%;
+
+    transition: 5s linear !important;
+
+    -webkit-border-top-left-radius: 100px;
+    -webkit-border-top-right-radius: 160px;
+    -webkit-border-bottom-right-radius: 300px;
+    -webkit-border-bottom-left-radius: 50px;
+    -moz-border-radius-topleft: 100px;
+    -moz-border-radius-topright: 160px;
+    -moz-border-radius-bottomright: 300px;
+    -moz-border-radius-bottomleft: 50px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 160px;
+    border-bottom-right-radius: 300px;
+    border-bottom-left-radius: 50px;
+}

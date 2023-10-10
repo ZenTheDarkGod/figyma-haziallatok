@@ -16,7 +16,10 @@
 
 
 .card {
-    --glass-border: rgba(255, 255, 255, 12.5%);
+    --rotate-x: 0;
+    --rotate-y: 0;
+    --rotation-multipier: 10;
+
     --gradient-x: 0;
     --gradient-y: 0;
     --gradient-opacity: .15;
@@ -26,6 +29,8 @@
 
     outline: 1px solid var(--glass-border);
     outline-offset: -1px;
+
+    rotate: var(--rotate-x) var(--rotate-y) 0 calc(var(--rotation-multipier) * 1deg);
 
     transition: 
         rotate .05s,
@@ -53,4 +58,4 @@
     transform: translate(-50%, -50%);
     
     transition: .15s !important;
-}
+} 

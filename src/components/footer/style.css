@@ -1,6 +1,6 @@
 footer {
     padding: var(--distance-25) !important;
-    border-top: 1px solid hsl(0 0% 85% / 30%);
+    border-top: 1px solid var(--glass-border);
 }
 
 footer .container-fluid {

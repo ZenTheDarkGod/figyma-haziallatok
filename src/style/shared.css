@@ -32,7 +32,8 @@ h1.title {
     padding: var(--distance-12-5) var(--distance-25);
     display: grid;
     justify-items: center;
-    border-bottom: 1px solid hsl(0 0% 85% / 30%);
+    border-bottom: 1px solid var(--glass-border);
+    backdrop-filter: blur(var(--distance-100));
 }
 
 .c-navbar > * {

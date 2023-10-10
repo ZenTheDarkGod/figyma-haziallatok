@@ -1,5 +1,7 @@
 
-export function animCards() {
+import { randomIntFromInterval } from "./tools";
+
+export function anim() {
 
     /**
      * caluculate disctance between cursor and card middle
@@ -37,6 +39,9 @@ export function animCards() {
                     y: boundingRect.height / 2 + disctancesPX.y / 2
                 }
 
+                element.style.setProperty("--rotate-y", `${disctancesPERCENT.y}`);
+                element.style.setProperty("--rotate-x", `${-1 * disctancesPERCENT.x}`);
+
                 element.style.setProperty("--gradient-x", `${gradiantPos.x}`);
                 element.style.setProperty("--gradient-y", `${gradiantPos.y}`);
             }
@@ -55,4 +60,48 @@ export function animCards() {
                 element.style.setProperty("--gradient-y", `${gradiantPos.y}`);
             })
         });
+
+    /**
+     * SCROLLING ANIM
+     */
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("onScreen");
+            } else {
+                // entry.target.classList.remove("hidden");
+            }
+        })
+    });
+
+    document.body.querySelectorAll<HTMLElement>("*").forEach((element) => {
+        element.classList.add("hidden");
+        console.log("element added");
+    });
+
+    setTimeout(() => {
+        const hidden = document.querySelectorAll(".hidden");
+        hidden.forEach((el) => observer.observe(el));
+    }, 200);
+
+    /**
+     * BLOB
+     */
+
+    const blob = document.querySelector<HTMLElement>(".following-blob");
+    if (!blob) {
+        console.log("No blob");
+        
+        return;
+    }
+
+    window.addEventListener("mousemove", (event: MouseEvent) => {
+        console.log("ysd");
+        
+        blob.style.setProperty("left", `${event.clientX}px`);
+        blob.style.setProperty("top", `${event.clientY}px`);
+
+        blob.style.setProperty("rotate", `0 0 ${randomIntFromInterval(0, 1)} ${randomIntFromInterval(0, 360)}deg`)
+    })
 }

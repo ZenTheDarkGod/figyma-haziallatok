@@ -12,9 +12,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./style/_vars.css";
 import "./style/shared.css";
 
-
+import Blob from "./components/followingBlob/blob";
 import NavBar from "~/components/navbar/navbar";
-import { animCards } from "./anims";
+import { anim } from "./anims";
 
 // import 'bootstrap/dist/js/bootstrap.bundle.min';
 
@@ -30,27 +30,7 @@ export default component$(() => {
   // useStylesScoped$(styles);
 
   useVisibleTask$(() => {
-    animCards();
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("onScreen");
-        } else {
-          // entry.target.classList.remove("hidden");
-        }
-      })
-    });
-
-    document.body.querySelectorAll<HTMLElement>("*").forEach((element) => {
-      element.classList.add("hidden");
-      console.log("element added");
-    });
-
-    setTimeout(() => {
-      const hidden = document.querySelectorAll(".hidden");
-      hidden.forEach((el) => observer.observe(el));
-    }, 200);
+    anim();
   })
 
   return (
@@ -62,6 +42,7 @@ export default component$(() => {
         <RouterHead />
       </head>
       <body lang="en">
+        <Blob />
         <NavBar />
         <RouterOutlet />
         <ServiceWorkerRegister />

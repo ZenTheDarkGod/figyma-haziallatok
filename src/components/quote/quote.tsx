@@ -1,7 +1,7 @@
 import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
 
 import Description from "../description/description";
-import { wait } from "~/tools";
+import { wait, randomIntFromInterval } from "~/tools";
 
 interface quote {
     author: string,
@@ -32,10 +32,6 @@ const quotes: quote[] = [
 ];
 
 function getRandomQuote() {
-    function randomIntFromInterval(min: number, max: number) { // min and max included 
-        return Math.floor(Math.random() * (max - min + 1) + min)
-    }
-
     return quotes[randomIntFromInterval(0, quotes.length - 1)];
 }
 
