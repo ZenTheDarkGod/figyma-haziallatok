@@ -12,7 +12,7 @@
 
     z-index: -1;
 
-    translate: -50% -65%;
+    translate: -50% -65% !important;
 
     transition: 5s linear !important;
 
