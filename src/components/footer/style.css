@@ -20,18 +20,42 @@ footer ul {
 }
 
 footer .row > * {
-    padding: 0 !important;
+    padding-inline: 0 !important;
+    padding-block: var(--distance-12-5);
     width: min(100%, var(--distance-250));
     display: flex;
     flex-direction: column;
     gap: var(--distance-6-25);
 }
 
-footer h2 {
-    font-weight: 600;
+footer .row > *:not(:last-child) {
+    border-right: 1px solid var(--glass-border);
 }
 
-footer .row > div > *:is(h2, h4, p) {
+footer h2 {
+    font-weight: 600;
+    font-size: var(--fs-36) !important;
+}
+
+footer h3 {
+    font-family: var(--ff-normal) !important;
+    font-size: var(--fs-20);
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer *:is(h2, h3, h4, p, a) {
     margin: 0 !important;
     padding: 0 !important;
+    /* text-decoration: 1px dashed var(--color-accent); */
+    color: var(--color-primary);
+}
+footer h4 {
+    font-family: var(--ff-normal) !important;
+    font-size: var(--fs-16);
+    margin-top: var(--distance-12-5) !important;
 }

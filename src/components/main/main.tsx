@@ -27,11 +27,11 @@ const Main = component$(() => {
                 <div class="row">
                     <Card
                         class="col-sm-12 col-md-4"
-                        owner="Zoli"
+                        owner="Zoltán"
                         type="cat"
                         petName="Kormi"
                         img={kormi}
-                        url="/zoli/"
+                        url="/zoltan/"
                     />
                     <Card
                         class="col-sm-12 col-md-4"
