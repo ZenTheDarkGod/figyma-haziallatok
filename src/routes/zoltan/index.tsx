@@ -52,6 +52,7 @@ export default component$(() => {
         petName="Kormi"
         headIMG={img}
         content={content}
+        type="cat"
       />
       <Footer />
     </>
