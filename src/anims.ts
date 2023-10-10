@@ -28,11 +28,13 @@ export function animCards() {
                     y: disctancesPX.y / (boundingRect.height / 2)
                 }
 
-                element.style.transform = `rotateY(${-1 * rotationMultipier * disctancesPERCENT.x}deg) rotateX(${rotationMultipier * disctancesPERCENT.y}deg)`;
+                // element.style.transform = `rotateY(${-1 * rotationMultipier * disctancesPERCENT.x}deg) rotateX(${rotationMultipier * disctancesPERCENT.y}deg)`;
+
+                element.style.setProperty("rotate", `${disctancesPERCENT.y} ${-1 * disctancesPERCENT.x} 0 ${rotationMultipier}deg`)
 
                 const gradiantPos = {
-                    x: boundingRect.width / 2 + disctancesPX.x,
-                    y: boundingRect.height / 2 + disctancesPX.y
+                    x: boundingRect.width / 2 + disctancesPX.x / 2,
+                    y: boundingRect.height / 2 + disctancesPX.y / 2
                 }
 
                 element.style.setProperty("--gradient-x", `${gradiantPos.x}`);
@@ -41,7 +43,7 @@ export function animCards() {
 
             element.addEventListener("mousemove", onmove);
             element.addEventListener("mouseleave", () => {
-                element.style.transform = "";
+                element.style.setProperty("rotate", `0 0 0 0deg`)
 
 
                 const gradiantPos = {

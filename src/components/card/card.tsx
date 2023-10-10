@@ -17,7 +17,7 @@ interface cardProps {
 const Card = component$((props: cardProps) => {
     return (
         <div class={`card ${props.class}`} style="width: 18rem;">
-            <img src={props.img} class="card-img-top"/>
+            <img src={props.img} class="card-img-top" />
                 <div class="card-body">
                     <img src={ props.type === "cat" ? cat_logo : dog_logo } alt="macska logó" />
                     <div class="detail-wrapper">

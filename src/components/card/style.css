@@ -1,10 +1,10 @@
 
 .card {
     border-radius: var(--distance-25) !important;
-    max-width: var(--distance-300) !important;
+    max-width: var(--distance-375) !important;
     padding: var(--distance-12-5) !important;
     gap: var(--distance-12-5);
-    background-color: var(--color-secondary-background) !important;
+    background-color: hsla(0 0% 9% / .2) !important;
 }
 
 .card-img-top {
@@ -16,18 +16,24 @@
 
 
 .card {
+    --glass-border: rgba(255, 255, 255, 12.5%);
     --gradient-x: 0;
     --gradient-y: 0;
-    --gradient-opacity: .25;
+    --gradient-opacity: .15;
 
     overflow: hidden;
     z-index: 1;
 
-    transition: transfrom linear .1s !important;
+    outline: 1px solid var(--glass-border);
+    outline-offset: -1px;
+
+    transition: rotate .05s !important;
+
 }
 
 .card:hover {
-    --gradient-opacity: 1;
+    box-shadow: 2px 14px 20px rgba(26, 26, 26, 0.144);
+    --gradient-opacity: .35;
 }
 
 .card::before {
@@ -35,7 +41,7 @@
     position: absolute;
     left: calc(var(--gradient-x) * 1px);
     top: calc(var(--gradient-y) * 1px);
-    height: 100%;
+    height: 125%;
     filter: blur(80px);
     aspect-ratio: 1/1;
     background-image: radial-gradient(circle, hsla(243, 100%, 69%, calc(0.761 * var(--gradient-opacity))) 0%, hsla(243, 100%, 69%, calc(0.502 * var(--gradient-opacity))) 50%, rgba(8,8,113,0) 72%, rgba(0,0,0,0) 100%);
@@ -43,5 +49,5 @@
     z-index: -1;
     transform: translate(-50%, -50%);
     
-    transition: .25s !important;
+    transition: .15s !important;
 }
