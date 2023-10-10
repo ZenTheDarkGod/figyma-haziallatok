@@ -24,9 +24,9 @@ const Blog = component$((props: BlogProps) => {
                     <li class="breadcrumb-item active" aria-current="page"> {props.ownerName} </li>
                 </ol>
             </nav>
-            <img src={props.headIMG} alt="Kép az állatról" class={props.type} />
+            <img src={props.headIMG} alt="Kép az állatról"/>
             <div class="card-body">
-                <img src={props.type === "cat" ? cat_logo : dog_logo} alt="macska logó" />
+                <img src={props.type === "cat" ? cat_logo : dog_logo} class={props.type} alt="macska logó" />
                 <div class="detail-wrapper">
                     <p>{props.ownerName} háziállata</p>
                     <p class="highlight">{props.petName}</p>
