@@ -96,12 +96,17 @@ export function anim() {
         return;
     }
 
+    let rotX = 0, rotY = 0;
+
     window.addEventListener("mousemove", (event: MouseEvent) => {
         console.log("ysd");
         
         blob.style.setProperty("left", `${event.clientX}px`);
         blob.style.setProperty("top", `${event.clientY}px`);
 
-        blob.style.setProperty("rotate", `0 0 ${randomIntFromInterval(0, 1)} ${randomIntFromInterval(0, 360)}deg`)
+        rotX += randomIntFromInterval(-10, 10);
+        rotY += randomIntFromInterval(-10, 10);
+
+        blob.style.setProperty("rotate", `0 0 ${rotX} ${rotY}deg`)
     })
 }
