@@ -1,6 +1,7 @@
 footer {
     padding: var(--distance-25) !important;
     border-top: 1px solid var(--glass-border);
+    backdrop-filter: blur( var(--distance-750));
 }
 
 footer .container-fluid {
@@ -11,7 +12,7 @@ footer .container-fluid {
 footer .row {
     justify-content: center;
     width: 100%;
-    gap: var(--distance-12-5);
+    gap: var(--distance-25);
     max-width: 100% !important;
 }
 
@@ -26,10 +27,14 @@ footer .row > * {
     display: flex;
     flex-direction: column;
     gap: var(--distance-6-25);
+    padding-top: 0 !important;
 }
 
-footer .row > *:not(:last-child) {
-    border-right: 1px solid var(--glass-border);
+@media (min-width: 1075px) {
+    footer .row > *:not(:last-child) {
+        border-bottom: none;
+        border-right: 1px solid var(--glass-border);
+    }
 }
 
 footer h2 {
