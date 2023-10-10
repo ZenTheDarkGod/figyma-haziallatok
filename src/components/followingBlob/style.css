@@ -7,7 +7,7 @@
 
     background-color: var(--color-accent);
     filter:
-        blur(var(--distance-300)) opacity(10%);
+        blur(var(--distance-300)) opacity(20%);
     position: fixed;
 
     z-index: -1;

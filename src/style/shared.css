@@ -33,7 +33,7 @@ h1.title {
     display: grid;
     justify-items: center;
     border-bottom: 1px solid var(--glass-border);
-    backdrop-filter: blur(var(--distance-100));
+    backdrop-filter: blur(var(--distance-750));
 }
 
 .c-navbar > * {
