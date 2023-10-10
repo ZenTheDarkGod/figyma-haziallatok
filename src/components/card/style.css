@@ -8,7 +8,7 @@
 }
 
 .card-img-top {
-    height: var(--distance-150) !important;
+    height: var(--distance-200) !important;
     border-radius: var(--distance-12-5) !important;
     object-fit: cover;
     object-position: center;
@@ -27,13 +27,16 @@
     outline: 1px solid var(--glass-border);
     outline-offset: -1px;
 
-    transition: rotate .05s !important;
+    transition: 
+        rotate .05s,
+        scale .1s !important;
 
 }
 
 .card:hover {
     box-shadow: 2px 14px 20px rgba(26, 26, 26, 0.144);
     --gradient-opacity: .35;
+    scale: 1.05;
 }
 
 .card::before {

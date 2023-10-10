@@ -33,8 +33,16 @@ img {
 }
 
 .quote {
+    --color: var(--color-secondary);
     margin: 0 !important;
+    transition: .1s;
     /* max-width: var(--distance-325); */
+
+    color: var(--color);
+}
+
+.quote > * {
+    color: inherit !important;
 }
 
 .quote .author {

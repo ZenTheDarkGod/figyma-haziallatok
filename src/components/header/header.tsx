@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 
 import Title from "../title/title";
-import Description from "../description/description";
+import Quote from "../quote/quote";
 
 
 import "./style.css";
@@ -16,14 +16,7 @@ const Header = component$(() => {
                     <Title level={1}>
                         háziállatok.
                     </Title>
-                    <Description class="quote">
-                        <p class="text">
-                            “Az ember csak azt védi, amit szeret. És hogyan fejlődhetne ki bennünk jobban az állatok iránti szeretet, mint ha szárnyaink alá veszünk és gondozgatunk egy jószágot?”
-                        </p>
-                        <p class="author">
-                            — Peter Wohlleben
-                        </p>
-                    </Description>
+                    <Quote />
                 </div>
                 <img class="col-sm-12 col-md-6" src={fishBowl} alt="illusztráció" />
             </div>

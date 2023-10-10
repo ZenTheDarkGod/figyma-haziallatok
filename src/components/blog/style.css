@@ -29,7 +29,7 @@ main.subsite-main {
 }
 
 .subsite-main > img {
-    --max-height-vw: 15;
+    --max-height-vw: 25;
 
     object-fit: cover;
     object-position: center;

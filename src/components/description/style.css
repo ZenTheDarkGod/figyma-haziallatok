@@ -2,6 +2,6 @@
 .c-description > * {
     font-family: var(--ff-normal);
     font-size: .75rem !important;
-    color: var(--color-secondary) !important;
+    color: var(--color-secondary);
     margin: 0 !important;
 }
