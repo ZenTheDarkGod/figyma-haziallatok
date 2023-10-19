@@ -4,6 +4,7 @@ import Title from "../title/title";
 
 
 import "./style.css";
+import licenc from '~/assets/licenc.pdf';
 
 
 const Footer = component$(() => {
@@ -60,7 +61,7 @@ const Footer = component$(() => {
                     <Title level={3}>
                         licenc
                     </Title>
-                    <a href="">Saját képeink licenc-je</a>
+                    <a href={licenc}>Saját képeink licenc-je</a>
                 </div>
             </div>
         </footer>
