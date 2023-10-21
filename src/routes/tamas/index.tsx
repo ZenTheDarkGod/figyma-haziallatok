@@ -28,7 +28,16 @@ export default component$(() => {
   ---
   
   ### Tisztitása
-  Havonta egy fürdést igényel Cooper, természetesen ha nagyon koszos akkor muszáj megfürdenie.`;
+  Havonta egy fürdést igényel Cooper, természetesen ha nagyon koszos akkor muszáj megfürdenie.
+  
+  ---
+
+  *Angol rész*
+  ### Summary
+  Cooper is a healthy dog with a really palyful attitude, he is a really well behaved dog whom I adore and love very much. 
+  <br> He has a very friendly attitude towards everyone even though somtimes he is a pretty scary looking dog. 
+  <br> He has a well balanced diet and he is pretty fit and healthy
+  `;
 
   return (
     <>

@@ -34,7 +34,16 @@ export default component$(() => {
   ---
 
   ### Egyéb információk 
-  Rubi most 4éves, Oroszlányról hoztuk el, és születésnapomra kaptam.`;
+  Rubi most 4éves, Oroszlányról hoztuk el, és születésnapomra kaptam.
+  
+  ---
+
+  *Angol rész*
+  ### Summary
+
+  Rubi is a very nice dog with a nice and playful behavior and a really joyful radiation. She has a very firendly attitude towards other dogs and humas as well. <br>
+  She is a healthy dog thanks to her diet and regular vet check ups.
+  `;
 
   return (
     <>

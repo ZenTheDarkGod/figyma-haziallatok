@@ -43,7 +43,17 @@ export default component$(() => {
   ---
 
   ### Megfelelő tartási körülmények 
-  Az ideális körülmények macskatartáshoz magukban foglalják a biztonságos, tágas környezetet, a természetes fényforráshoz való hozzáféréssel, a kiegyensúlyozott táplálékot, a rendszeres állatorvosi ellátást, valamint az elkötelezett játék- és interakciós időt. Egy szeretetteljes és türelmes hozzáállás, valamint egy rutin kialakítása biztosítja a boldog és kielégítő macskatársat.`;
+  Az ideális körülmények macskatartáshoz magukban foglalják a biztonságos, tágas környezetet, a természetes fényforráshoz való hozzáféréssel, a kiegyensúlyozott táplálékot, a rendszeres állatorvosi ellátást, valamint az elkötelezett játék- és interakciós időt. Egy szeretetteljes és türelmes hozzáállás, valamint egy rutin kialakítása biztosítja a boldog és kielégítő macskatársat.
+  
+  ---
+  
+  *Angol rész*
+  ### Summary
+  Kormi is my 6 year old cat, whom I love deeply. When he was one or two years of age I tought him how to do a high five. We have practiced it every day since. 
+  <br> Kormi is many things but the one thing he is not, is an active cat *(at least not nowadays)*. He very much likes to sleep a lot, sometimes even 16+ hours a day.
+  <br> I adore and love my cat so much, that I have many pictures of him framed in my room.
+
+  `;
 
   return (
     <>
